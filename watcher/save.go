@@ -31,12 +31,12 @@ func plotRecords(rec Records, name string) {
 		XAxis: chart.XAxis{
 			Name:           "Time",
 			Style:          chart.StyleShow(),
-			ValueFormatter: chart.TimeHourValueFormatter,
+			ValueFormatter: chart.TimeMinuteValueFormatter,
 		},
 		YAxis: chart.YAxis{
 			Name:           "Metric in %",
 			Style:          chart.StyleShow(),
-			ValueFormatter: chart.FloatValueFormatter,
+			ValueFormatter: chart.PercentValueFormatter,
 		},
 		Series: []chart.Series{
 			chart.TimeSeries{

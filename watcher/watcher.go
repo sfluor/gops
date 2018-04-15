@@ -50,7 +50,7 @@ func getProcessStats(p *process.Process, noChildren bool) (float64, float64) {
 		}
 	}
 
-	return cpu, mem64
+	return cpu / 100, mem64 / 100
 }
 
 func Watch(pid int, interval time.Duration, duration time.Duration, noChildren bool, output string, json bool) {
