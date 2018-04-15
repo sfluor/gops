@@ -16,3 +16,5 @@ gops
 *.png
 *.json
 vendor/
+
+dist/
